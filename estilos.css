@@ -1,0 +1,73 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+header {
+    background-color: cornflowerblue;
+    color:white;
+}
+
+.header__titulo {
+    text-align: center;
+    font-size: 2em;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.header__link {
+    text-decoration: underline;
+}
+
+.header__link:hover {
+    cursor: pointer;
+    color:lightblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.main__div {
+    margin: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: cornflowerblue;
+    padding: 5px;
+    text-align: left;
+    width: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__div {
+    width: stretch;
+  }
+}
+
+.main__div-titulo {
+    font-size: 1.5em;
+}
+
+.main__form-mensagem {
+    height: 2.5em;
+    min-height: 200px;
+    width: 99.5%;
+
+}
+
+.main__button-enviar {
+    padding: 5px;
+    margin-top: 2px;
+}
