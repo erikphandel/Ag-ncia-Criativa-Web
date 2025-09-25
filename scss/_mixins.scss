@@ -1,0 +1,9 @@
+@mixin centralizar-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin borda($cor) {
+  border: 1px solid $cor;
+}

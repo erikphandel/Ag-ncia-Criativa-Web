@@ -1,0 +1,29 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+header {
+  background-color: $cor-primaria;
+  color: white;
+}
+
+.header__titulo {
+  text-align: center;
+  font-size: 2em;
+}
+
+.header__nav {
+  @include centralizar-flex;
+  padding-bottom: $espaco-pequeno;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__div {
+    width: stretch;
+  }
+}
